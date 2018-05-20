@@ -1,6 +1,6 @@
 $(function(){
 
-    $(".activity-box").mouseover(function(){
+    $(".activity-box, .achievement-box").mouseover(function(){
 
         $(this).css("background-color","#4ECCBF");
         $(this).find("img").css("opacity", 0);

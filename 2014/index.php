@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <script src="javascripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <script src="../javascripts/product.js"></script>
     <title>制作物</title>
 </head>
 <body>
@@ -22,24 +22,24 @@
 
     <div id="content">
         <div class="heading">
-            講義・個人での制作 2016
+            講義・個人での制作 2014
         </div>
 
         <div class="achievement-list">
             <div class="activity-box">
-                <a href="2014/">
+                <a href="./">
                     <img src="../../img/activity/calendar.jpg">
                     <p>2014</p>
                 </a>
             </div>
             <div class="activity-box">
-                <a href="2015/">
+                <a href="../2015/">
                     <img src="../../img/activity/calendar.jpg">
                     <p>2015</p>
                 </a>
             </div>
             <div class="activity-box">
-                <a href="./">
+                <a href="../">
                     <img src="../../img/activity/calendar.jpg">
                     <p>2016</p>
                 </a>
@@ -47,16 +47,14 @@
         </div>
 
         <div id="item-list">
-
             <?php
 
-            require "../php/function.php";
-            require "php/connectToMySQL.php";
+            require "../../php/function.php";
+            require "../php/connectToMySQL.php";
 
-            showProducts($connection, 2016);
+            showProducts($connection, 2014);
 
-            ?>
-
+            ?>    
         </div>
 
     </div>
