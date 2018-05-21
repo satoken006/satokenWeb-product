@@ -27,7 +27,6 @@ function showProducts( $_connection, $_year ){
             $result .= "<div class='achievement-list'>";
 
             foreach( $achievements_json as $obj ){
-                
                 $name  = $obj->{"name"};
                 $label = $obj->{"label"};
                 $url   = $obj->{"url"};
