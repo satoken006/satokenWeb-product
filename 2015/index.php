@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
-    <script src="../javascripts/product.js"></script>
+    <script src="../javascripts/main.js"></script>
     <title>制作物</title>
 </head>
 <body>
@@ -39,9 +39,15 @@
                 </a>
             </div>
             <div class="activity-box">
-                <a href="../">
+                <a href="../2016/">
                     <img src="../../img/activity/calendar.jpg">
                     <p>2016</p>
+                </a>
+            </div>
+            <div class="activity-box">
+                <a href="../">
+                    <img src="../../img/activity/calendar.jpg">
+                    <p>2017</p>
                 </a>
             </div>
         </div>

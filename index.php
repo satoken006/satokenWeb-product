@@ -22,7 +22,7 @@
 
     <div id="content">
         <div class="heading">
-            講義・個人での制作 2016
+            講義・個人での制作 2017
         </div>
 
         <div class="achievement-list">
@@ -39,9 +39,15 @@
                 </a>
             </div>
             <div class="activity-box">
-                <a href="./">
+                <a href="2016/">
                     <img src="../../img/activity/calendar.jpg">
                     <p>2016</p>
+                </a>
+            </div>
+            <div class="activity-box">
+                <a href="./">
+                    <img src="../../img/activity/calendar.jpg">
+                    <p>2017</p>
                 </a>
             </div>
         </div>
@@ -53,7 +59,7 @@
             require "../php/function.php";
             require "php/connectToMySQL.php";
 
-            showProducts($connection, 2016);
+            showProducts($connection, 2017);
 
             ?>
 
