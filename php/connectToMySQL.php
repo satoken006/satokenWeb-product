@@ -9,16 +9,20 @@ function showProducts( $_connection, $_year ){
 
     foreach( $_connection->query( $q ) as list($id, $date, $category, $title, $description, $thumbnail_url, $achievements) ){;
 
+        $result .= "<div class='item-margin'></div>";
         $result .= "<div class='item'>";
         $result .= "<div class='item-heading'>";
         $result .= "<img class='symbol' src='https://satoken.nkmr.io/img/product/$category.png'>";
         $result .= "<div class='achievement-heading'>$title</div>";
         $result .= "</div>";
+
+        $result .= "<div class='item-body'>";
+        $result .= "<div class='item-thumbnail'>";
+        $result .= "<img src='https://satoken.nkmr.io/img/product/thumbnail/$thumbnail_url'>";
+        $result .= "</div>";
         $result .= "<div class='item-desc'>";
         $result .= $description;
         $result .= "</div>";
-        $result .= "<div class='item-thumbnail'>";
-        $result .= "<img src='https://satoken.nkmr.io/img/product/thumbnail/$thumbnail_url'>";
         $result .= "</div>";
 
         $achievements_json = json_decode($achievements);

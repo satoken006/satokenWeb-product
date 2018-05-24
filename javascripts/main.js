@@ -1,5 +1,10 @@
 $(function(){
 
+    $(".item-body").each(function(){
+        var h = $(this).find(".item-thumbnail > img").height();
+        $(this).height(h+10);
+    });
+
     $(".activity-box, .achievement-box").mouseover(function(){
 
         $(this).css("background-color","#4ECCBF");
